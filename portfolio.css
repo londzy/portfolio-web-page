@@ -1,0 +1,193 @@
+body {
+  width : 100%;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    /*border: 1px solid #ccc;*/
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #F0FFFF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #f1f1f1;
+}
+
+/* Style the tab content */
+/*.tabcontent {
+    padding: 0px 22px 0px 0px;
+    position: absolute;
+    top: 40px;
+    right: 600px;
+    width: 100%;
+    max-width: 400px;
+    color:black;
+    font-size: 14px;
+
+}*/
+
+/* .tabcontent, p{ */
+  /* text-align: center; */
+/* } */
+
+
+.Home{
+  padding: 0px 15px;
+  width: 100%;
+  border-left: none;
+  height: 100%;
+  max-width: 600px;
+  font-size: 20px;
+
+}
+
+.tabcontent {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 50px 50px;
+  margin: 0 auto;
+  background: #fff;
+  min-height:100%;
+  right: 600px;
+  bottom: 900px;
+}
+
+.Home, h1{
+  //font-size: 40px;
+  font-family: monospace;
+  text-align: center;
+  z-index: 100;
+}
+
+.h1{
+}
+.background{
+  width: 100%;
+  /*background-image: url(file:///home/coder/projects2/portfolio-webpage/img/reee.jpg);*/
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /*transform: rotate(-90deg);*/
+  }
+
+  img {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-codepen {
+  background: #191970;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+@media screen and (min-width:768px){
+  .background{
+    max-width: 25rem;
+  }
+
+}
+@media screen and (max-width:640px){
+     background{
+       width:100%;
+     }
+
+     Home{
+       width:100%;
+     }
+
+     tab{
+       width:100%;
+     }
+
+     tabcontent{
+       width:100%;
+       padding: 0;
+        overflow-x: hidden;
+
+     }
+
+
+
+
+}
