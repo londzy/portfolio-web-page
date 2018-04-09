@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="portfolio.css">
+      </head>
+
+<!-- <div class="background"> -->
+
+  <body class="fullscreen">
+
+    <img class="background" src="https://ibb.co/nODpex" alt="image" style="">
+    <div id="Home" class="Home">
+      <h1><u>Londiwe Cele</u></h1>
+      <p><i>software developer</i></p>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+      <button class="tablinks" onclick="openCity(event, 'about me')">about me</button>
+      <button class="tablinks" onclick="openCity(event, 'front End')">front End</button>
+      <button class="tablinks" onclick="openCity(event, 'back End')">back End</button>
+      <button class="tablinks" onclick="openCity(event, 'contacts')">contacts</button>
+    </div>
+
+
+
+    <div id="about me" class="tabcontent" style="width:100%; max-width:450px; padding: 20px">
+      <h3>about me</h3>
+      <p>I am Londiwe Cele <a href="http://www.projectcodex.co/" target="_blank">codeX</a> student.Am new in this tech world and my journey so far is the most interersting thing i'v ever done.I'v never enjoyed anything like i enjoy coding.</p>
+      <p>I'v always been into computers internal working system to be precise, I have done computer short course certificate at <a href="https://www.icdl.org.za/" target="_blank">ICDL</a>, where i did microsoft and excell</p>
+      <p>Bellow is the link of my online CV where you will get more information about me and my work  <a href="https://www.indeed.com/resumes?sp=0&hl=en&co=ZA&isid=find-resumes-ZA&ikw=hometop&_ga=2.240985475.1666063263.1522940036-636924489.1522940036" target="_blank">my CV</a></p>
+
+    </div>
+
+    <div id="front End" class="tabcontent">
+      <h2>front End</h2>
+      <p>Created a landing page which has my 2 basic web-pages first one i did not use grids and the second one i used simple grids</p>
+      <p>In these pages I describe my holiday destination and why is it  my dream holiday destination</p>
+      <p>I have 3 photos taken at the historical places found in Western cape, capetown.</p>
+      <p>And i also mention 3 interesting facts about each picture</p>
+      <p>Click the following link to see my pages!</p>
+      <p><a href="https://londzy.github.io/basic-webpage/">My landing page</a></p>
+    </div>
+
+    <div id="back End" class="tabcontent">
+      <h3>back End</h3>
+      <p>Below is the tests of the functions i did in the codeX bootcamp</p>
+      <p>It was my first time coding tests it was challenging at first but i really enjoyed them towards the end</p>
+      <p>Click below to see the tests</p>
+      <p><a href="https://londzy.github.io/bootcamp-tests/">Bootcamp-tests</a></p>
+    </div>
+
+    <div id="contacts" class="tabcontent">
+
+      <h3>Connect with me</h3>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/londiwe.c.cele?ref=bookmarks" class="fa fa-facebook"></a>
+<a href="https://twitter.com/londzy_c" class="fa fa-twitter"></a>
+<a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.co.za/_/chrome/newtab%3Fei%3DfvrFWqGLDIeUsAfzyL6QDQ%26yv%3D2" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/jobs/?bypassMobileRedirects=false" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/londzy_c/" class="fa fa-instagram"></a>
+<a href="https://codepen.io/LondzyX/pen/NYKQda" class="fa fa-codepen"></a>
+<a href="https://github.com/londzy" class="fa fa-github"></a>
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+  </body>
+<!-- </div> -->
+</html>
